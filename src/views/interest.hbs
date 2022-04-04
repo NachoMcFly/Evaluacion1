@@ -1,0 +1,20 @@
+<section class="container py-4">
+  <h1>Calcular Tasa de Interes</h1>
+  <form action="/" method="post">
+    <div class="mb-3">
+      <label for="maths" class="form-label">Monto</label>
+      <input type="number" class="form-control" name="quantity" value="{{quantity}}">
+    </div>
+    <div class="mb-3">
+      <label for="chemistry" class="form-label">Interes</label>
+      <input type="number" class="form-control" name="interestRate" value="{{interestRate}}">
+    </div>
+    <div class="mb-3">
+      <label for="physics" class="form-label">Año</label>
+      <input type="number" class="form-control" name="years" value="{{years}}">
+    </div>
+    <button type="submit" class="btn btn-primary">Calcular promedio</button>
+  </form>
+  
+      <p><span class="fw-bold">Calcular Tasa de Interes:</span> {{total}}</p>
+</section>
