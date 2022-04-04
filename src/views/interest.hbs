@@ -1,20 +1,21 @@
 <section class="container py-4">
-  <h1>Calcular Tasa de Interes</h1>
+  <h1 class="display-4"><b>Calcular Tasa de Interes</b></h1>
+  
   <form action="/" method="post">
     <div class="mb-3">
       <label for="maths" class="form-label">Monto</label>
-      <input type="number" class="form-control" name="quantity" value="{{quantity}}">
+      <input type="number" placeholder="Monto en $ pesos" class="form-control" size="40" name="quantity" value="{{quantity}}">
     </div>
     <div class="mb-3">
       <label for="chemistry" class="form-label">Interes</label>
-      <input type="number" class="form-control" name="interestRate" value="{{interestRate}}">
+      <input type="number" placeholder="Porcentaje Interes %" class="form-control" name="interestRate" value="{{interestRate}}">
     </div>
     <div class="mb-3">
       <label for="physics" class="form-label">Año</label>
-      <input type="number" class="form-control" name="years" value="{{years}}">
+      <input type="number" placeholder="Años" class="form-control" name="years" value="{{years}}">
     </div>
-    <button type="submit" class="btn btn-primary">Calcular promedio</button>
+    <button type="submit" class="btn btn-primary">Calcular</button>
   </form>
   
-      <p><span class="fw-bold">Calcular Tasa de Interes:</span> {{total}}</p>
+      <p><span class="fw-bold">Calculo de la Tasa de Interes:</span> {{total}}</p>
 </section>
